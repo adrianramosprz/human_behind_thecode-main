@@ -18,15 +18,7 @@ Este repositorio contiene el código fuente de mi portafolio personal interactiv
 *   **CSS3 (Variables HSL/Animations)**: Motor de colores con variables nativas `--bg`, `--neon`, `--accent` e interactividad hover en el layout.
 *   **JavaScript ES6+**: Múltiples lógicas para menús *offcanvas*, validadores para `IntersectionObserver` y sistema de i18n, sin dependencias.
 
-## 📄 ¿Cómo Generar el PDF del Currículum?
 
-El documento `cv_adrian_ramos.pdf` que se descarga desde el sitio web se genera a partir de la versión imprimible `cv.html` alojada usando el motor **Chromium/Edge** en modo renderizado oculto (*headless*).
-
-Si actualizas algún texto o experiencia dentro de `cv.html` o `style.css` y quieres reflejar esos cambios permanentemente en el archivo PDF de descarga, ejecuta el siguiente comando en Powershell:
-
-```powershell
-& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --print-to-pdf="cv_adrian_ramos.pdf" "cv.html"
-```
 
 ## 👨‍💻 Sobre el Autor
 
