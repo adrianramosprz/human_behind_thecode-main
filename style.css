@@ -224,6 +224,38 @@ body::before {
   flex-shrink: 0;
 }
 
+.lang-selector {
+  background-color: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  appearance: none; /* Hide default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  transition: all var(--dur-fast) var(--ease-out);
+  outline: none;
+  position: relative;
+}
+
+.lang-selector:hover,
+.lang-selector:focus {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+.lang-selector option {
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
 .header-socials {
   display: flex;
   gap: 0.3rem;

@@ -9,6 +9,8 @@
     content="Portfolio y curriculum de Adrián Ramos, DevOPS &amp; Automation Engineer apasionado por crear experiencias digitales con propósito." />
   <meta property="og:title" content="Adrián Ramos — DevOPS &amp; Automation Engineer" />
   <meta property="og:description" content="Portfolio y curriculum de Adrián Ramos, DevOPS &amp; Automation Engineer." />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%2300f576'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -34,12 +36,12 @@
 
       <nav class="header-nav" id="header-nav" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
-          <li><a href="#about" class="nav-link" id="nav-about"> <span class="nav-gt"
-                aria-hidden="true">&gt;</span>Sobre_mí</a></li>
+          <li><a href="#about" class="nav-link" id="nav-about"> <span class="nav-gt" aria-hidden="true">&gt;</span><span
+                data-i18n="nav.about">Sobre_mí</span></a></li>
           <li><a href="#experience" class="nav-link" id="nav-experience"> <span class="nav-gt"
-                aria-hidden="true">&gt;</span>Experiencia</a></li>
+                aria-hidden="true">&gt;</span><span data-i18n="nav.experience">Experiencia</span></a></li>
           <li><a href="#projects" class="nav-link" id="nav-projects"> <span class="nav-gt"
-                aria-hidden="true">&gt;</span>Proyectos</a></li>
+                aria-hidden="true">&gt;</span><span data-i18n="nav.projects">Proyectos</span></a></li>
         </ul>
       </nav>
 
@@ -68,7 +70,8 @@
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
           </a>
-          <a href="#" class="social-link" id="link-resume" aria-label="Descargar CV">
+          <a href="./cv_adrian_ramos.pdf" download="CV_Adrian_Ramos.pdf" class="social-link" id="link-resume"
+            aria-label="Descargar CV" data-i18n-aria="cv.aria">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
@@ -78,6 +81,13 @@
             </svg>
           </a>
         </div>
+
+        <!-- LANG DROPDOWN -->
+        <select id="lang-toggle" class="lang-selector" aria-label="Seleccionar idioma">
+          <option value="es">SP</option>
+          <option value="en">EN</option>
+        </select>
+
         <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
           aria-controls="header-nav">
           <span></span><span></span><span></span>
@@ -97,20 +107,23 @@
       <div class="hero-content">
         <p class="hero-boot" aria-label="Sistema inicializado">
           <span class="hero-gt" aria-hidden="true">&gt;&gt;</span>
-          <span id="hero-boot-text">SYSTEM_INITIALIZED</span>
+          <span id="hero-boot-text" data-i18n="hero.boot">SYSTEM_INITIALIZED</span>
           <span class="blink-cursor" aria-hidden="true">█</span>
         </p>
         <h1 class="hero-name" data-text="Adrián Ramos">Adrián Ramos</h1>
         <p class="hero-role">
-          DevOPS &amp; Automation Engineer<span class="role-underscore" aria-hidden="true">_</span>
+          <span data-i18n="hero.role">DevOPS &amp; Automation Engineer</span><span class="role-underscore"
+            aria-hidden="true">_</span>
         </p>
-        <p class="hero-tagline">
+        <p class="hero-tagline" data-i18n="hero.tagline">
           Automatizo infraestructuras, acelero despliegues y elimino trabajo repetitivo.<br>
-          Si se puede scripting, se puede mejorar.
+          Si se puede automatizar, se puede mejorar.
         </p>
         <div class="hero-cta">
-          <a href="#projects" class="btn-primary" id="cta-projects">Ver proyectos <span aria-hidden="true">▸</span></a>
-          <a href="#" class="btn-ghost" id="cta-cv">[ Descargar_CV ]</a>
+          <a href="#projects" class="btn-primary" id="cta-projects"><span data-i18n="hero.cta.projects">Ver
+              proyectos</span> <span aria-hidden="true">▸</span></a>
+          <a href="./cv_adrian_ramos.pdf" download="CV_Adrian_Ramos.pdf" class="btn-ghost" id="cta-cv"
+            data-i18n="hero.cta.cv">[ Descargar_CV ]</a>
         </div>
       </div>
       <!-- Decorative tech tags -->
@@ -131,7 +144,7 @@
     <section id="about" class="section" aria-labelledby="heading-about">
       <h2 id="heading-about" class="section-title">ABOUT.json</h2>
       <div class="about-grid">
-        <div class="about-text">
+        <div class="about-text" data-i18n="about.desc">
           <p>
             Soy un ingeniero de DevOps especializado en automatización de despliegues
             y operaciones. Mi herramienta principal de Infraestructura como Código es
@@ -176,7 +189,7 @@
             </div>
             <div class="skill-bar">
               <div class="skill-bar-info">
-                <span class="skill-name">Python / Bash</span>
+                <span class="skill-name" data-i18n="skills.python">Python / Bash</span>
                 <span class="skill-lvl">LVL 8</span>
               </div>
               <div class="skill-track">
@@ -185,7 +198,7 @@
             </div>
             <div class="skill-bar">
               <div class="skill-bar-info">
-                <span class="skill-name">Docker / Contenedores</span>
+                <span class="skill-name" data-i18n="skills.docker">Docker / Contenedores</span>
                 <span class="skill-lvl">LVL 8</span>
               </div>
               <div class="skill-track">
@@ -203,7 +216,7 @@
             </div>
             <div class="skill-bar">
               <div class="skill-bar-info">
-                <span class="skill-name">Linux / Administración</span>
+                <span class="skill-name" data-i18n="skills.linux">Linux / Administración</span>
                 <span class="skill-lvl">LVL 8</span>
               </div>
               <div class="skill-track">
@@ -221,8 +234,8 @@
 
       <article class="exp-card" id="exp-empresa-actual">
         <div class="exp-meta">
-          <span class="exp-status exp-status--active">● ACTIVO</span>
-          <span class="exp-date">2024 — Presente</span>
+          <span class="exp-status exp-status--active" data-i18n="exp.status.active">● ACTIVO</span>
+          <span class="exp-date" data-i18n="exp.date.present">2024 — Presente</span>
         </div>
         <div class="exp-body">
           <h3 class="exp-title">
@@ -230,7 +243,7 @@
             <a href="https://www.domingoalonsogroup.com/" target="_blank" rel="noopener noreferrer"
               class="exp-company-link">Domingo Alonso Group</a>
           </h3>
-          <p class="exp-desc">
+          <p class="exp-desc" data-i18n="exp.desc.devops">
             Automatización de despliegues de software mediante <strong>Puppet</strong> como
             herramienta de Infraestructura como Código, gestionando la configuración y el
             ciclo de vida de los servidores en entornos de producción. Diseño e implementación
@@ -247,21 +260,26 @@
             <li class="tag">CI/CD</li>
           </ul>
         </div>
-
       </article>
 
       <article class="exp-card" id="exp-servicedesk">
         <div class="exp-meta">
-          <span class="exp-status">✓ COMPLETADO</span>
+          <span class="exp-status" data-i18n="exp.status.completed">✓ COMPLETADO</span>
           <span class="exp-date">2019 — 2024</span>
         </div>
         <div class="exp-body">
           <h3 class="exp-title">
             ServiceDesk Agent &amp; IT Support ·
-            <a href="https://www.domingoalonsogroup.com/" target="_blank" rel="noopener noreferrer" class="exp-company-link">Domingo Alonso Group</a>
+            <a href="https://www.domingoalonsogroup.com/" target="_blank" rel="noopener noreferrer"
+              class="exp-company-link">Domingo Alonso Group</a>
           </h3>
-          <p class="exp-desc">
-            Soporte técnico crítico (Nivel 1/2) e infraestructura física y cloud en entornos de alta demanda. Administración de identidades con <strong>Google Workspace</strong>, gestión de escritorios virtuales en <strong>Citrix Workspace</strong> y protección endpoint con <strong>Bitdefender</strong>. Liderazgo técnico en proyectos de expansión para nuevos centros, coordinando el despliegue de CPDs, redes cloud <strong>Extreme Networks</strong> y telefonía <strong>AVAYA</strong>, asegurando una resolución eficiente de incidencias bajo metodologías ágiles a través de <strong>JIRA</strong>.
+          <p class="exp-desc" data-i18n="exp.desc.servicedesk">
+            Soporte técnico crítico (Nivel 1/2) e infraestructura física y cloud en entornos de alta demanda.
+            Administración de identidades con <strong>Google Workspace</strong>, gestión de escritorios virtuales en
+            <strong>Citrix Workspace</strong> y protección endpoint con <strong>Bitdefender</strong>. Liderazgo técnico
+            en proyectos de expansión para nuevos centros, coordinando el despliegue de CPDs, redes cloud
+            <strong>Extreme Networks</strong> y telefonía <strong>AVAYA</strong>, asegurando una resolución eficiente de
+            incidencias bajo metodologías ágiles a través de <strong>JIRA</strong>.
           </p>
           <ul class="tag-list" aria-label="Tecnologías usadas" role="list">
             <li class="tag">JIRA</li>
@@ -274,8 +292,9 @@
         </div>
       </article>
 
-      <a href="#" class="resume-link" id="resume-full-link" aria-label="Ver CV completo en PDF">
-        Ver CV completo
+      <a href="./cv_adrian_ramos.pdf" download="CV_Adrian_Ramos.pdf" class="resume-link" id="resume-full-link"
+        aria-label="Ver CV completo en PDF">
+        <span data-i18n="exp.cta.cv">Ver CV completo</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M5 12h14M12 5l7 7-7 7" />
@@ -291,28 +310,24 @@
         <div class="project-image-wrap" aria-hidden="true">
           <div class="project-image project-image--1">
             <span>$ git status -working-onit</span>
-            <!--<span class="pi-line"><em>M</em> tracker.js</span>
-            <span class="pi-line"><em>A</em> dashboard.tsx</span>
-            <span class="pi-line pi-cmd">&gt; Monitoring 42 repos...</span>-->
           </div>
         </div>
         <div class="project-body">
           <div class="project-top">
             <h3 class="project-title">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" id="link-devtracker">Working on
+              <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" id="link-devtracker"
+                data-i18n="projects.working">Working on
                 it</a>
             </h3>
             <div class="project-links" aria-label="Links del proyecto">
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub del proyecto DevTracker"
-                class="icon-link">
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub del proyecto" class="icon-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
                   aria-hidden="true">
                   <path
                     d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.51 11.51 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.807 5.625-5.48 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Demo en vivo de DevTracker"
-                class="icon-link">
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Demo en vivo" class="icon-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   aria-hidden="true">
@@ -323,25 +338,14 @@
               </a>
             </div>
           </div>
-          <!-- <p class="project-desc">
-            Plataforma para monitorizar el estado de repositorios GitHub de equipo en tiempo
-            real. Integra métricas de CI/CD, pull requests abiertos y alertas de deuda técnica
-            en un dashboard unificado.
-          </p> -->
-          <!-- <ul class="tag-list" aria-label="Tecnologías del proyecto" role="list">
-            <li class="tag">React</li>
-            <li class="tag">GitHub API</li>
-            <li class="tag">Node.js</li>
-            <li class="tag">WebSockets</li>
-          </ul> -->
         </div>
       </article>
     </section>
 
     <!-- ─── FOOTER ─── -->
     <footer class="footer">
-      <p>
-        Diseñado y desarrollado con 🔥 usando HTML, CSS &amp; JavaScript.
+      <p data-i18n="footer.desc">
+        Diseñado y desarrollado con 🔥 usando AI, HTML, CSS &amp; JavaScript.
         Inspirado en <a href="https://brittanychiang.com" target="_blank" rel="noopener noreferrer"
           class="inline-link">Brittany Chiang</a>.
       </p>
@@ -349,6 +353,8 @@
 
   </main>
 
+  <!-- Script for translations -->
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 
