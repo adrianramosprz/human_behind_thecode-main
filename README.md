@@ -1,7 +1,9 @@
 # Adrián Ramos — DevOPS &amp; Automation Engineer
 
-![Portfolio Status](https://img.shields.io/badge/Status-Online-00f576?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Stack-Vanilla_Web-ffaa1a?style=for-the-badge)
+![Deployment](https://img.shields.io/badge/deployment-passing-brightgreen)
+![Stack](https://img.shields.io/badge/stack-Vanilla_JS-F7DF1E?logo=javascript&logoColor=black)
+![Platform](https://img.shields.io/badge/platform-Web-0078D4)
+![License](https://img.shields.io/badge/license-Propietaria_%E2%80%94_no_comercial-e65100)
 
 Este repositorio contiene el código fuente de mi portafolio personal interactivo y currículum vitae web. Diseñado desde cero bajo una filosofía minimalista orientada al rendimiento, sin depender de pesados *frameworks* de frontend, e implementando estética "hacker/gamer" con detalles modernos.
 
@@ -28,4 +30,8 @@ Soy un ingeniero de DevOps especializado en automatización de despliegues y ope
 
 ## 📄 Licencia
 
-Este proyecto y código están dispuestos bajo un uso libre para estudio y visualización. Para cualquier consulta profesional, ¡puedes descargar el CV o encontrarme en mi [LinkedIn](https://www.linkedin.com/in/adrianramosprz)!
+**Licencia Propietaria — No comercial**
+
+El código fuente, los diseños y la base documental de este repositorio están protegidos. Puedes visualizar el código con propósitos de aprendizaje o para la evaluación técnica de mis aptitudes, pero **no está autorizada** su copia, distribución, modificación ni su utilización como plantilla para portafolios propios o proyectos de terceros, ya sean comerciales o no.
+
+Para cualquier consulta profesional, ¡puedes descargar el CV o encontrarme en mi [LinkedIn](https://www.linkedin.com/in/adrianramosprz)!
