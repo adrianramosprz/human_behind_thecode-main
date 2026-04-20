@@ -24,7 +24,7 @@ const translations = {
     "exp.desc.servicedesk": "Soporte técnico crítico (Nivel 1/2) e infraestructura física y cloud en entornos de alta demanda. Administración de identidades con <strong>Google Workspace</strong>, gestión de escritorios virtuales en <strong>Citrix Workspace</strong> y protección endpoint con <strong>Bitdefender</strong>. Liderazgo técnico en proyectos de expansión para nuevos centros, coordinando el despliegue de CPDs, redes cloud <strong>Extreme Networks</strong> y telefonía <strong>AVAYA</strong>, asegurando una resolución eficiente de incidencias bajo metodologías ágiles a través de <strong>JIRA</strong>.",
     "exp.cta.cv": "Ver CV completo",
     "projects.working": "Working on it",
-    "footer.desc": "Diseñado y desarrollado con 🔥 usando AI, HTML, CSS &amp; JavaScript. Inspirado en <a href=\"https://brittanychiang.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-link\">Brittany Chiang</a>."
+    "footer.desc": "Diseñado y desarrollado con 🔥 usando HTML, CSS &amp; JavaScript."
   },
   en: {
     "nav.about": "About_me",
@@ -51,21 +51,21 @@ const translations = {
     "exp.desc.servicedesk": "Critical technical support (L1/L2) and physical/cloud infrastructure management in high-demand environments. Identity administration with <strong>Google Workspace</strong>, virtual desktop management in <strong>Citrix Workspace</strong>, and endpoint protection with <strong>Bitdefender</strong>. Technical leadership in expansion projects for new centers, coordinating the deployment of datacenters, <strong>Extreme Networks</strong> cloud networks, and <strong>AVAYA</strong> telephony, ensuring efficient incident resolution under agile methodologies via <strong>JIRA</strong>.",
     "exp.cta.cv": "View full CV",
     "projects.working": "Working on it",
-    "footer.desc": "Designed and built with 🔥 using AI, HTML, CSS &amp; JavaScript. Inspired by <a href=\"https://brittanychiang.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-link\">Brittany Chiang</a>."
+    "footer.desc": "Designed and built with 🔥 using HTML, CSS &amp; JavaScript."
   }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   const langToggle = document.getElementById("lang-toggle");
   if (!langToggle) return;
-  
+
   // Detect saved language or use default 'es'
   let currentLang = localStorage.getItem("preferredLanguage") || "es";
   langToggle.value = currentLang;
 
   const updateLanguage = (lang) => {
     document.documentElement.lang = lang;
-    
+
     // Update texts
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Visibility Tracker (Away Status) ---
   const initialTitle = document.title;
   const faviconLink = document.querySelector("link[rel~='icon']");
-  
+
   const greenFavicon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%2300f576'/%3E%3C/svg%3E";
   const yellowFavicon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%23ffaa1a'/%3E%3C/svg%3E";
 
